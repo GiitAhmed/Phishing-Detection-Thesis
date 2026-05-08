@@ -11,6 +11,8 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 print("1. Loading dataset and cleaning text...")
 data = pd.read_csv("Phishing_Email.csv").dropna(subset=['body', 'label'])
 
+print("Total number of emails used:", len(data))
+
 def clean_text(text):
     text = str(text).lower()
     return re.sub(r'[^a-z\s]', '', text)
@@ -23,7 +25,7 @@ X = vectorizer.fit_transform(data['cleaned_body'])
 y = data['label'].astype(int)
 
 print("3. Splitting into Training and Testing Sets...")
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.02, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
 
 # --- THE COMPARATIVE STUDY ---
 print("4. Training Multiple Models (Please wait ~1-2 minutes)...")
