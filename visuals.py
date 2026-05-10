@@ -1,3 +1,9 @@
+"""
+generate_visuals.py
+Author: Ahmed Ibrahim
+Purpose: Generates the Exploratory Data Analysis (EDA) and Random Forest Feature 
+Importance horizontal bar graphs (Figure 2 and Figure 7) used in the thesis.
+"""
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
