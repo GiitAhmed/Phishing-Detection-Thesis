@@ -9,9 +9,9 @@
 This repository contains the machine learning pipeline developed for the thesis *"Design and Implementation of a Machine Learning-Based Phishing Email Detection System."* The primary objective of this project is to provide a lightweight, open-source cybersecurity solution tailored for Small and Medium-sized Enterprises (SMEs). The system utilizes streamlined text preprocessing and TF-IDF vectorization to detect phishing emails without requiring the massive computational resources or expensive hardware typically associated with deep learning models.
 
 The project evaluates three standard classification algorithms:
-* **Random Forest** (Ensemble Method)
-* **Naive Bayes** (Probabilistic Method)
-* **Logistic Regression** (Linear Method)
+* **Random Forest** 
+* **Naive Bayes** 
+* **Logistic Regression** 
 
 ## 📊 Dataset
 This project utilizes the publicly available **Phishing Email Dataset** compiled by Naser Abdullah Alam. The raw dataset contains over 82,000 emails, which are reduced to 39,154 highly labeled samples during the script's cleaning phase.
