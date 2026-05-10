@@ -27,6 +27,7 @@ To replicate the environment and run the scripts, install the required mathemati
 ```bash
 pip install pandas scikit-learn matplotlib
 ```
+
 🚀 Two-Phase Methodology (How to Run)
 
 To evaluate the models' viability for SMEs, the experiment is divided into two distinct phases. You can run each phase independently using the provided scripts.
@@ -57,6 +58,7 @@ The scripts output a detailed terminal table measuring:
     Recall (Sensitivity): The percentage of all actual threats successfully intercepted.
 
 Upon completion, both scripts will automatically generate and display a Matplotlib bar graph illustrating the comparative accuracy percentages of the three models.
+
 📄 License and Usage
 
 This code is provided as an open-source academic supplement. Researchers and IT professionals are welcome to review, test, and adapt the methodology for their own lightweight cybersecurity implementations.
