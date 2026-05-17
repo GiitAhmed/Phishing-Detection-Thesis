@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score
 
 print("1. Loading dataset and cleaning text...")
 data = pd.read_csv("Phishing_Email.csv").dropna(subset=['body', 'label'])
@@ -48,8 +48,7 @@ for name, model in models.items():
     results[name] = {
         "Accuracy": accuracy_score(y_test, predictions) * 100,
         "Precision": precision_score(y_test, predictions) * 100,
-        "Recall": recall_score(y_test, predictions) * 100,
-        "F1-Score": f1_score(y_test, predictions) * 100
+        "Recall": recall_score(y_test, predictions) * 100
     }
 
 print("\n==========================================================")
